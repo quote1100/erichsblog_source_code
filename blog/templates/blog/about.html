@@ -1,0 +1,45 @@
+{#This is about page for erich's blog#}
+{% extends "blog/base.html" %}
+
+{% block content %}
+<style>
+	a:hover .emailme {
+		display: none;}
+
+	a:hover .myemail:before {
+		content:"quote1100@gmail.com";}
+	.aboutpage {
+		font-size: 20px;
+		line-height:40px; }
+	.signature {
+		text-align: right;
+	}
+	firstletter {
+		font-size: 40px;
+		font-weight: bold;	}
+
+
+</style>
+<div class="aboutpage">
+	<p><firstletter>H</firstletter>i, my name is Erich Sung. I currently live in US and will happily be married to a wonderful woman by the time I deploy this blog.
+	I was born in America, but I shortly moved to South Korea with my parents when i was but a wee lad.
+		I then lived in Korea for about 10 years, where I spent my adolescence. In 2001, I moved back to America and have been living here ever since. Thanks to my background I am fully bilingual: being able to speak, read, and write in both English and Korean.
+		If I think about it, having such diverse background has helped me with learning programming languages.</p>
+	<p><firstletter>I</firstletter> first picked up Java, sort of as a hobby. I enjoyed coding, enough to a point where I wanted to do it for living.
+		I then started looking into python because it seemed easy to learn. I then wanted to create a blog of my own so I picked up web-related languages such as HTML, CSS, Javascript, MySQL, PHP, etc.
+		There are a lot of hosting services that provide convenient and aesthetically pleasing pre-built blog structures; but I thought, 'where's fun in that? I want to build it from scratch, and deploy it using cloud!'</p>
+	<p><firstletter>A</firstletter>nyhow... as I was studying different programming languages, I thought it was like learning a different (human) language.
+		When I first came to US, I was not able to speak single English. I was scared and didn' know where to start.
+		Only through perseverance was I able to build "learning momentum" if you will. It took time, but it gave me a valuable lesson: 'learning consists of two things, and that is time and effort'.</p>
+	<p><firstletter>T</firstletter>his is my life in nutshell. If you want to know more about me (meaning: if you want to offer me a job ;D), send me an
+		<a href='mailto: quote1100@gmail.com'>
+			<span class="emailme">email</span>
+			<span class="myemail"></span>
+		</a>!
+	</p>
+</div>
+<p class="signature">Erich Sung <br>
+	March 5th, 2019</p>
+
+
+{% endblock content%}
