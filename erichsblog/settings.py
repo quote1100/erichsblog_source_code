@@ -74,23 +74,17 @@ WSGI_APPLICATION = 'erichsblog.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/2.1/ref/settings/#databases
 
-# DATABASES = {
-#     'default': {
-#         'ENGINE': 'django.db.backends.sqlite3',
-#         'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
-#     }
-# }
 # [START db_setup]
 if os.getenv('GAE_APPLICATION', None):
     # Running on production App Engine, so connect to Google Cloud SQL using
     # the unix socket at /cloudsql/<your-cloudsql-connection string>
     DATABASES = {
         'default': {
-            'ENGINE': 'django.db.backends.mysql',
-            'HOST': '/cloudsql/erichsblog:us-central1:erichsblog-db',
-            'USER': 'quote1100',
-            'PASSWORD': '4392734',
-            'NAME': 'erichsblogdb',
+            'ENGINE': '',
+            'HOST': '',
+            'USER': '',
+            'PASSWORD': '',
+            'NAME': '',
         }
     }
 else:
@@ -100,29 +94,15 @@ else:
     # See https://cloud.google.com/sql/docs/mysql-connect-proxy
     DATABASES = {
         'default': {
-            'ENGINE': 'django.db.backends.mysql',
-            'HOST': '127.0.0.1',
-            'PORT': '3306',
-            'NAME': 'erichsblogdb',
-            'USER': 'root',
-            'PASSWORD': '4392734',
+            'ENGINE': '',
+            'HOST': '',
+            'PORT': '',
+            'NAME': '',
+            'USER': '',
+            'PASSWORD': '',
         }
     }
 # [END db_setup]
-
-
-
-# DATABASES = {
-#     'default': {
-#         'ENGINE': 'django.db.backends.mysql',
-#         'NAME': 'erichsblog',
-#         'USER': 'root',
-#         'PASSWORD':'4392734',
-#         'HOST': 'localhost',
-#         'PORT':''
-#     }
-# }
-
 
 # Password validation
 # https://docs.djangoproject.com/en/2.1/ref/settings/#auth-password-validators
