@@ -1,2 +1,2 @@
 # erichsblog_source_code
-This is piped to my GCP VM
+This is pulled directly from GCP VM server
